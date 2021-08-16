@@ -6,7 +6,7 @@ import CharacterList from '../presentation/CharactersList';
 const Main = () => {
 
   const [characters, setCharacters] = useState([]);
-  const toggle = useContext(ThemeContext);
+  const { toggle } = useContext(ThemeContext);
 
   useEffect(() => {
     fetchFuturamaCharacters()
@@ -16,7 +16,7 @@ const Main = () => {
   }, []);
 
   return (
-    <div style={toggle ? { background: 'lightblue' } : {}}>
+    <div style={toggle ? { background: 'grey' } : {}}>
       <CharacterList characters={characters} />
     </div>
   );

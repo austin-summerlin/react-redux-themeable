@@ -6,7 +6,7 @@ const Header = () => {
   const { toggle, toggleFunction } = useContext(ThemeContext);
 
   return (
-    <div style={toggle ? { background: 'blue' } : {}}>
+    <div style={toggle ? { background: 'grey' } : {}}>
       <h1>Toggle Toggle Toggle</h1>
       <label className={style.switch}>
         <input type="checkbox" onClick={toggleFunction} />
