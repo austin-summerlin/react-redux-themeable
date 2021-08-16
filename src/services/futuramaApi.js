@@ -7,6 +7,7 @@ export const fetchFuturamaCharacters = async () => {
   console.log(json);
 
   return json.map(({ PicUrl, Name }) => ({
+
     name: Name,
     image: PicUrl,
   }));

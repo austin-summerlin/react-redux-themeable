@@ -1,11 +1,11 @@
 import React from 'react';
 import { render } from 'react-dom';
 import App from './components/app/App';
-import { CharacterProvider } from './state/CharacterProvider';
+import { ThemeProvider } from './state/ThemeContext';
 
 render(
-  <CharacterProvider>
+  <ThemeProvider>
     <App />
-  </CharacterProvider>,
+  </ThemeProvider>,
   document.getElementById('root')
 );
