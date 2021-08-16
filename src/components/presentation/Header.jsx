@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { ThemeContext } from '../../state/ThemeContext';
-import style from './header.css';
+import style from './Header.css';
 
 const Header = () => {
   const { toggle, toggleFunction } = useContext(ThemeContext);
